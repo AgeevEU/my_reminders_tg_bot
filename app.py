@@ -3,7 +3,7 @@ import threading
 from flask import Flask
 from bot import main as start_bot  # Импортируем функцию запуска бота
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route('/')
 def health():
